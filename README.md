@@ -57,7 +57,7 @@ Para esse desafio, temos os seguintes testes:
     
     Para que esse teste passe, no middleware **checksExistsUserAccount** deve-se retornar uma resposta com status `404` caso o username passado pelo header da requisição não pertença a nenhum usuário. É possível também retornar uma mensagem de erro, mas isso é opcional.
 
-  - **Should be able to let user create a new todo when is in free plan and have less than ten todos**
+- **Should be able to let user create a new todo when is in free plan and have less than ten todos**
     
     Para que esse teste passe, deve-se permitir que o middleware **checksCreateTodosUserAvailability** receba o objeto `user` (considere sempre que o objeto existe) da `request` e chame a função `next` somente no caso do usuário estar no **plano grátis e ainda não possuir 10 *todos* cadastrados** ou se ele **já estiver com o plano Pro ativado**.
     
@@ -69,7 +69,7 @@ Para esse desafio, temos os seguintes testes:
     
     Para que esse teste passe, no middleware **checksCreateTodosUserAvailability** deve-se retornar uma resposta com status `403` caso o usuário recebido pela requisição esteja no **plano grátis** e **já tenha 10 *todos* cadastrados**. Pode-se também retornar uma mensagem de erro, mas isso é opcional.
 
-  - **Should be able to let user create infinite new todos when is in Pro plan**
+- **Should be able to let user create infinite new todos when is in Pro plan**
     
     Para que esse teste passe, deve-se permitir que o middleware **checksCreateTodosUserAvailability** receba o objeto `user` (considere sempre que o objeto existe) da `request` e chame a função `next` caso o usuário já esteja com o plano Pro. 
     
@@ -81,7 +81,7 @@ Para esse desafio, temos os seguintes testes:
     
     É importante que seja colocado dentro de `request.user` o usuário encontrado e dentro de `request.todo` o *todo* encontrado.
 
-  - **Should not be able to put user and todo in request when user does not exists**
+- **Should not be able to put user and todo in request when user does not exists**
     
     Para que esse teste passe, no middleware **checksTodoExists** deve-se retornar uma resposta com status `404` caso não exista um usuário com o `username` passado pelo header da requisição.
     
@@ -97,7 +97,7 @@ Para esse desafio, temos os seguintes testes:
     
     Para que esse teste passe, o middleware **findUserById** deve receber o `id` de um usuário de dentro do `request.params`. Deve-se validar que o usuário exista, repassar ele para `request.user` e retornar a chamada da função next.
 
-  - **Should not be able to pass user to request.user when it does not exists**
+- **Should not be able to pass user to request.user when it does not exists**
     
     Para que esse teste passe, no middleware **findUserById** deve-se retornar uma resposta com status `404` caso o `id` do usuário **passado pelos parâmetros da requisição não pertença a nenhum usuário cadastrado.
 
