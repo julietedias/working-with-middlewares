@@ -1,9 +1,8 @@
 # Desafio Ignite: Trabalhando com Middlewares
 
-# 💻 Sobre o desafio
+## 📝 Sobre o desafio
 
-Nesse desafio será rtabalhado mais a fundo com middlewares no Express.
-
+Nesse desafio será trabalhado mais a fundo com middlewares no Express.
 É uma aplicação para gerenciar tarefas (ou *todos*).
 
 Será permitida a criação de um usuário com `name` e `username`, bem como fazer o CRUD de *todos*:
